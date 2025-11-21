@@ -39,3 +39,102 @@ footer {
     background-color: #f8f9fa;
     margin-top: auto;
 }
+
+/* Additional styling for colors, backgrounds, and visual appeal */
+
+/* Header and footer styling */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation styling */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header li {
+    padding: 10px 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f39c12;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Article and aside styling */
+article {
+    background: #f8f9fa;
+    border-right: 2px solid #e9ecef;
+    padding: 30px;
+}
+
+article h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+article p {
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+aside {
+    background: #ecf0f1;
+    padding: 30px;
+}
+
+aside p {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Body background */
+body {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    min-height: 100vh;
+}
+
+/* Main content area styling */
+main {
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Link styling in footer */
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
