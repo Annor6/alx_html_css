@@ -1,0 +1,263 @@
+/* IMPORT PREVIOUS STYLES */
+@import url("1-styles.css");
+
+/* OUR RESULTS SECTION */
+.results {
+    background: url("images/headphones_hero_2.jpg") no-repeat center/cover;
+    padding: 80px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.results .section-desc {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* RESULTS GRID */
+.results-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result-box {
+    width: 22%;
+    text-align: center;
+}
+
+.result-box .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin: 0 auto 20px;
+}
+
+.result-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+
+    .results-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .result-box {
+        width: 100%;
+    }
+
+    .result-box .circle {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* ---------- Contact Section ---------- */
+.contact-section {
+    padding: 80px 20px;
+    background: #f7f7f7;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.send-btn {
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.send-btn:hover {
+    background: #333;
+    transform: scale(1.06);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: #000;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-socials img {
+    width: 32px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ---------- Fade-in Animation ---------- */
+@keyframes fadeInUp {
+    0% { 
+        opacity: 0; 
+        transform: translateY(40px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 480px) {
+
+    .contact-form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-socials img {
+        width: 28px;
+        margin: 0 8px;
+    }
+}
+/* Pentagon Shape */
+.pentagon {
+    width: 100px;
+    height: 55px;
+    background-color: #FF6565;
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+.pentagon::before,
+.pentagon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.pentagon::before {
+    bottom: 100%;
+    border-bottom: 30px solid #FF6565;
+}
+
+.pentagon::after {
+    top: 100%;
+    border-top: 30px solid #FF6565;
+}
+
+/* Adjust result-box spacing */
+.result-box h3 {
+    margin-top: 0;
+}
+/* Fade in + scale up animation on page load */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* WHAT WE DO ITEMS */
+.services .service {
+    animation: fadeInScale 0.8s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.services .service:nth-child(1) { animation-delay: 0.1s; }
+.services .service:nth-child(2) { animation-delay: 0.3s; }
+.services .service:nth-child(3) { animation-delay: 0.5s; }
+.services .service:nth-child(4) { animation-delay: 0.7s; }
+
+/* OUR RESULTS ITEMS */
+.results-grid .result-box {
+    animation: fadeInScale 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.results-grid .result-box:nth-child(1) { animation-delay: 0.2s; }
+.results-grid .result-box:nth-child(2) { animation-delay: 0.4s; }
+.results-grid .result-box:nth-child(3) { animation-delay: 0.6s; }
+.results-grid .result-box:nth-child(4) { animation-delay: 0.8s; }
